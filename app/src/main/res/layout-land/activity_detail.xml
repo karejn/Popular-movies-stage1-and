@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".DetailActivity">
+
+
+    <ImageView
+        style="@style/PosterView"
+        android:id="@+id/iv_poster"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/poster_content_desc"
+        android:scaleType="centerCrop"
+        android:transitionName="transition_poster"
+        tools:srcCompat="@drawable/no_picture" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/large_margin"
+            android:paddingRight="@dimen/large_margin"
+            android:paddingTop="@dimen/large_margin">
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="@dimen/no_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:textColor="@color/textColor"
+                android:textSize="@dimen/textSizeBig"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toStartOf="@+id/rb_rating"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="Star Wars" />
+
+            <TextView
+                android:id="@+id/tv_description"
+                android:layout_width="@dimen/no_margin"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/large_margin"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum molestie elit, in pellentesque purus auctor ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque interdum elementum nisi non vestibulum. Morbi ut nulla arcu. Vestibulum vitae sapien est. Morbi porta tortor sed enim eleifend consectetur. Ut vestibulum finibus velit, ut mollis tellus interdum a.  Morbi fermentum, arcu eget aliquet sodales, est nisi tempus libero, eu tempus quam arcu eget sem. Curabitur quis dictum quam. Etiam quis scelerisque ipsum, eu finibus elit. Fusce et semper eros, sit amet congue libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor finibus luctus. Vestibulum tempus dui eget erat commodo mollis. Cras porttitor semper mauris ac interdum.TextView" />
+
+            <RatingBar
+                android:id="@+id/rb_rating"
+                style="@style/Widget.AppCompat.RatingBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/medium_margin"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:numStars="5"
+                android:stepSize="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/tv_votes"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:rating="3.5" />
+
+            <TextView
+                android:id="@+id/tv_votes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/medium_margin"
+                android:textSize="@dimen/textSize"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:text="(777)" />
+
+            <TextView
+                android:id="@+id/tv_year"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_title"
+                tools:text="(2018)" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
