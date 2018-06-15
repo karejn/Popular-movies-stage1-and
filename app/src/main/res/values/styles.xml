@@ -37,6 +37,58 @@
         <item name="android:layout_margin">@dimen/layout_margin</item>
         <item name="android:gravity">center</item>
         <item name="android:visibility">invisible</item>
-</style>
+    </style>
+
+    <style name="Card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_margin">@dimen/small_margin</item>
+        <item name="android:elevation">@dimen/small_margin</item>
+    </style>
+
+    <style name="Poster">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:transitionName">trans_poster</item>
+        <item name="android:src">@drawable/no_picture</item>
+    </style>
+
+    <style name="PosterView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/poster_height</item>
+        <item name="android:scaleType">centerCrop</item>
+        <item name="android:transitionName">trans_poster</item>
+    </style>
+
+    <style name="Title">
+        <item name="android:layout_width">@dimen/no_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/medium_margin</item>
+        <item name="android:layout_marginStart">@dimen/medium_margin</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:textColor">@color/textColor</item>
+        <item name="android:textSize">@dimen/textSizeBig</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Description">
+        <item name="android:layout_width">@dimen/no_margin</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/medium_margin</item>
+        <item name="android:layout_marginStart">@dimen/medium_margin</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+    </style>
+
+    <style name="Votes">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">@dimen/medium_margin</item>
+        <item name="android:layout_marginTop">@dimen/small_margin</item>
+        <item name="android:textSize">@dimen/textSize</item>
+    </style>
+
 
 </resources>

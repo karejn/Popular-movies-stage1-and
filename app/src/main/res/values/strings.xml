@@ -2,4 +2,7 @@
     <string name="app_name">Popular Movies</string>
     <string name="action_settings">Settings</string>
     <string name="error">Information could not be loaded. Please check your Internet Connection and try again.</string>
+    <string name="poster_content_desc">Movie Poster</string>
+    <string name="description_sample">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dictum molestie elit, in pellentesque purus auctor ac. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Quisque interdum elementum nisi non vestibulum. Morbi ut nulla arcu. Vestibulum vitae sapien est. Morbi porta tortor sed enim eleifend consectetur. Ut vestibulum finibus velit, ut mollis tellus interdum a.  Morbi fermentum, arcu eget aliquet sodales, est nisi tempus libero, eu tempus quam arcu eget sem. Curabitur quis dictum quam. Etiam quis scelerisque ipsum, eu finibus elit. Fusce et semper eros, sit amet congue libero. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque auctor finibus luctus. Vestibulum tempus dui eget erat commodo mollis. Cras porttitor semper mauris ac interdum.</string>
+
 </resources>
